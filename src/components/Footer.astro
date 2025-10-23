@@ -3,6 +3,7 @@ import { fetchCategories, fetchSalesProducts } from '../api/products';
 import humanize from 'humanize-string';
 
 const categories = await fetchCategories();
+// console.log("footerA: ", categories);
 const sales = await fetchSalesProducts();
 ---
 
@@ -33,6 +34,7 @@ const sales = await fetchSalesProducts();
                   class="nav-link text-body"
                   href={`/shop?category=${category}`}
                 >
+                  
                   {humanize(category)}
                 </a>
               </li>

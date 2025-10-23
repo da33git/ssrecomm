@@ -11,6 +11,11 @@ import { fetchProducts, fetchCategories } from '../api/products';
 const currentCategory = Astro.url.searchParams.get('category') || '';
 
 const categories = await fetchCategories();
+// const categories = ["beauty", "fragrances", "furniture", "groceries"]
+
+// const categorySlug = categories.map((aa) => ({slug: aa.slug}));
+// console.log("CatSlug: ", categorySlug);
+
 const { products } = await fetchProducts(currentCategory);
 ---
 
@@ -23,6 +28,8 @@ const { products } = await fetchProducts(currentCategory);
       <div class="d-flex flex-wrap text-center my-4">
         {
           categories.map((category) => {
+            
+            
             const checked = currentCategory === category;
             const route = checked ? '' : `category=${category}`;
             return (

@@ -18,7 +18,15 @@ import {
 export const prerender = true;
 
 const categories = (await fetchCategories()).slice(0, 4);
+// const categories = ["beauty", "fragrances", "furniture", "groceries"]
+// console.log("myCat: ", categories);
+// const testcat = (await fetchCategories()).slice(0, 4);
+// const justSlugs =  testcat.map(obj => obj.slug);
+// console.log("myCatj: ", justSlugs);
+
 const images = await Promise.all(categories.map(fetchCategoryImage));
+// console.log("myCatI: ", images);
+
 const testimonials = await fetchTestimonials();
 ---
 
@@ -45,7 +53,8 @@ const testimonials = await fetchTestimonials();
               <a href={`/shop?category=${category}`}>
                 <CardCategory
                   thumb_src={images[i]}
-                  title={humanize(category)}
+                  // title={humanize(category)}
+                   title={category}
                 />
               </a>
             </div>
