@@ -6,4 +6,3 @@ build-product/
 .DS_Store
 dist/
 .vercel/
-.vercel
