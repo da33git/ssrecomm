@@ -1477,9 +1477,9 @@ debug@^3.2.7:
     ms "^2.1.1"
 
 decamelize@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/decamelize/-/decamelize-6.0.0.tgz"
-  integrity sha512-Fv96DCsdOgB6mdGl67MT5JaTNKRzrzill5OH5s8bjYJXVlcXyPYGyPsUkWyGV5p1TXI5esYIYMMeDJL0hEIwaA==
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-6.0.1.tgz#e858c37870153e1f733e92347ac3a3f009081ca7"
+  integrity sha512-G7Cqgaelq68XHJNGlZ7lrNQyhZGsFqpwtGFexqUv4IQdjKoSYF7ipZ9UuTJZUSQXFj/XaoBLuEVIVqr8EJngEQ==
 
 decode-named-character-reference@^1.0.0:
   version "1.0.2"
@@ -2556,10 +2556,10 @@ human-signals@^3.0.1:
   resolved "https://registry.npmjs.org/human-signals/-/human-signals-3.0.1.tgz"
   integrity sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==
 
-humanize-string@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/humanize-string/-/humanize-string-3.0.0.tgz"
-  integrity sha512-jhWD2GAZRMELz0IEIfqpEdi0M4CMQF1GpJpBYIopFN6wT+78STiujfQTKcKqZzOJgUkIgJSo2xFeHdsg922JZQ==
+humanize-string@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/humanize-string/-/humanize-string-3.1.0.tgz#7d2ed6a94c2a89b475fc0fab10cd2396e26b991f"
+  integrity sha512-wEtOOR3sT8nZ7W0WZwEXo68z2EA0kpcpjaN/ZXxpps9PDzZdX8+TAj+XOGKx2WkagP9mnhWtFpfMNSd2WAhiIQ==
   dependencies:
     decamelize "^6.0.0"
 
