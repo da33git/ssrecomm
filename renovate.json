@@ -1,5 +1,5 @@
  {
- 	"schema": "https://docs.renovatebot.com/renovate-schema.json"
+ 	"schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": ["config"],
     "rangeStrategy": "bump",
     
@@ -43,9 +43,6 @@
     {
     "description": "Major updates require approval",
     "matchUpdateTypes": ["major"],
-
-    Printed using ChatGPT to PDF, powered by PDFCrowd HTML to PDF API.
-                                                                   24/31
     "automerge": false,
     "dependencyDashboardApproval": true
     }
