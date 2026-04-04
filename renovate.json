@@ -1,6 +1,6 @@
  {
  	
-    "extends": ["config:recommended"],
+    "extends": ["config:recommended", "mergeConfidence:all-badges"],
     "rangeStrategy": "bump",
     "packageRules": [
     {
