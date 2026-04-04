@@ -2,7 +2,7 @@
  	
     "extends": ["config:base"],
     "rangeStrategy": "bump",
-    "onboarding": true,
+    
     "packageRules": [
     {
     "description": "Svelte ecosystem (high risk)",
