@@ -1,0 +1,53 @@
+ {
+ 	"schema": "https://docs.renovatebot.com/renovate-schema.json"
+    "extends": ["config"],
+    "rangeStrategy": "bump",
+    
+    "packageRules": [
+    {
+    "description": "Svelte ecosystem (high risk)",
+    "matchPackagePatterns": ["^svelte", "^@sveltejs/"],
+    "groupName": "svelte ecosystem",
+    "automerge": false,
+    "dependencyDashboardApproval": true
+    },
+     {
+     "description": "Astro ecosystem (high risk)",
+         "matchPackageNames": ["astro", "@astrojs/*"],
+         "groupName": "astro framework updates",
+         "automerge": false,
+         "dependencyDashboardApproval": true
+       },
+    {
+    "description": "Vite ecosystem",
+    "matchPackagePatterns": ["^vite", "^@vitejs/"],
+    "groupName": "vite ecosystem"
+    },
+    {
+    "description": "Linting tools",
+    "matchPackagePatterns": ["^eslint", "^prettier"],
+    "groupName": "linting",
+    "automerge": false
+    },
+    {
+    "description": "Testing tools",
+    "matchPackagePatterns": ["^vitest", "^jest", "^@testing-library"],
+    "groupName": "testing"
+    },
+    {
+    "description": "Minor/patch safe updates",
+    "matchUpdateTypes": ["minor", "patch"],
+    "excludePackagePatterns": ["astro", "@astrojs/*", "^svelte", "^@sveltejs/", "^vite", "^@vitejs/"],
+    "automerge": false
+    },
+    {
+    "description": "Major updates require approval",
+    "matchUpdateTypes": ["major"],
+
+    Printed using ChatGPT to PDF, powered by PDFCrowd HTML to PDF API.
+                                                                   24/31
+    "automerge": false,
+    "dependencyDashboardApproval": true
+    }
+    ]
+    }
