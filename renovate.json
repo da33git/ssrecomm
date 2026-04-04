@@ -1,8 +1,7 @@
  {
  	
-    "extends": ["config:base"],
+    "extends": ["config:recommended"],
     "rangeStrategy": "bump",
-    
     "packageRules": [
     {
     "description": "Svelte ecosystem (high risk)",
@@ -35,11 +34,26 @@
     "groupName": "testing"
     },
     {
+    "description": "Minor safe updates",
+    "matchUpdateTypes": ["minor"],
+    "matchCurrentVersion": "!/^0/",
+    "excludePackagePatterns": ["astro", "@astrojs/*", "^svelte", "^@sveltejs/", "^vite", "^@vitejs/"],
+    "automerge": false
+    },
+    {
+    "description": "Patch safe updates",
+    "matchUpdateTypes": ["patch"],
+    "matchCurrentVersion": "!/^0/",
+    "excludePackagePatterns": ["astro", "@astrojs/*", "^svelte", "^@sveltejs/", "^vite", "^@vitejs/"],
+    "automerge": true
+    },
+        {
     "description": "Minor/patch safe updates",
     "matchUpdateTypes": ["minor", "patch"],
     "excludePackagePatterns": ["astro", "@astrojs/*", "^svelte", "^@sveltejs/", "^vite", "^@vitejs/"],
     "automerge": false
     },
+
     {
     "description": "Major updates require approval",
     "matchUpdateTypes": ["major"],
