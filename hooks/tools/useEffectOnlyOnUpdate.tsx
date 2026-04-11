@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { DependencyList, useEffect, useRef } from 'react';
+import {  useEffect, useRef } from 'react';
+import type { DependencyList } from 'react';
 
 export const useEffectOnlyOnUpdate = (
   callback: (deps: DependencyList) => void,
