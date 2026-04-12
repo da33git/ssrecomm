@@ -1,18 +1,18 @@
 ---
-import { fetchCategories, fetchSalesProducts } from '../api/products';
-import humanize from 'humanize-string';
+import { fetchCategories, fetchSalesProducts } from "../api/products";
+import humanize from "humanize-string";
 
 const categories = await fetchCategories();
 // console.log("footerA: ", categories);
 const sales = await fetchSalesProducts();
 ---
 
-<footer class="container">
-  <div class="row mt-5 mb-2">
-    <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-      <h6 class="w-100 pb-3 border-bottom">Categories</h6>
-      <div class="d-flex pt-2">
-        <ul class="nav flex-column ms-n3">
+<footer class="w-full lg:w-[80%] mx-auto">
+  <div class="row mt-5 mb-2 flex flex-row gap-4 align-center">
+    <div class="col-12 col-lg-6 mb-4 mb-lg-0 flex-none w-[40%]">
+      <h6 class="w-full pb-3 border-bottom border-b-2">Categories</h6>
+      <div class="d-flex flex flex-row justify-between pt-2">
+        <ul class="nav flex-col ms-n3 flex">
           {
             categories.slice(0, 4).map((category) => (
               <li class="nav-item">
@@ -26,7 +26,7 @@ const sales = await fetchSalesProducts();
             ))
           }
         </ul>
-        <ul class="nav flex-column ms-6 ms-md-11 ms-lg-10">
+        <ul class="nav flex-col ms-6 ms-md-11 ms-lg-10">
           {
             categories.slice(4, 8).map((category) => (
               <li class="nav-item">
@@ -34,7 +34,6 @@ const sales = await fetchSalesProducts();
                   class="nav-link text-body"
                   href={`/shop?category=${category}`}
                 >
-                  
                   {humanize(category)}
                 </a>
               </li>
@@ -43,9 +42,9 @@ const sales = await fetchSalesProducts();
         </ul>
       </div>
     </div>
-    <div class="col-6 col-lg-3">
-      <h6 class="w-100 pb-3 border-bottom">Sales & Deals</h6>
-      <ul class="nav flex-column ms-n3 pt-2">
+    <div class="col-6 col-lg-3 mb-4 flex-0 ml-4 w-[30%] shrink">
+      <h6 class="w-90 pb-3 border-bottom border-b-2">Sales & Deals</h6>
+      <ul class="nav flex-col ms-n3 pt-2">
         {
           sales.slice(4, 8).map((product) => (
             <li class="nav-item">
@@ -57,9 +56,9 @@ const sales = await fetchSalesProducts();
         }
       </ul>
     </div>
-    <div class="col-6 col-lg-3">
-      <h6 class="w-100 pb-3 border-bottom">Company Info</h6>
-      <ul class="nav flex-column ms-n3 pt-2">
+    <div class="col-6 col-lg-3 mb-4 flex-0 ml-4 w-[30%] shrink">
+      <h6 class="w-90 pb-3 border-bottom border-b-2">Company Info</h6>
+      <ul class="nav flex-col ms-n3 pt-2">
         <li class="nav-item">
           <a class="nav-link text-body" href="/about"> About us</a>
         </li>

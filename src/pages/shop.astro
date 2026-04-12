@@ -20,12 +20,12 @@ const { products } = await fetchProducts(currentCategory);
 ---
 
 <Layout title="Shop">
-  <div class="container mt-5">
-    <div class="row">
-      <div class="mt-4 d-flex justify-content-between align-items-center">
+  <div class="container mt-5  mx-auto ">
+    <div class="Jontainer  row flex flex-col items-center justify-between mb-4">
+      
         <h6 class="mb-0">Select a category:</h6>
-      </div>
-      <div class="d-flex flex-wrap text-center my-4">
+      
+      <div class="d-flex flex flex-row flex-wrap text-center my-4">
         {
           categories.map((category) => {
             
@@ -34,9 +34,9 @@ const { products } = await fetchProducts(currentCategory);
             const route = checked ? '' : `category=${category}`;
             return (
               <div class="mb-3 me-3">
-                <div class="form-check">
+                <div class="form-check block pl mb-0.5">
                   <input
-                    class="form-check-input rounded-2"
+                    class="form-check-input rounded-2 border-2 border-solid"
                     type="radio"
                     name="flexRadioDefault"
                     checked={checked}
@@ -53,10 +53,10 @@ const { products } = await fetchProducts(currentCategory);
         }
       </div>
     </div>
-    <div class="row">
+    <div class="row flex flex-row  flex-wrap items-center justify-between mb-4">
       {
         products.map((product) => (
-          <div class="col-md-6 col-lg-3">
+          <div class="DMA1 col-md-6 col-lg-3 grow-0 mx-auto basis-1/4">
             <CardProduct
               thumb_src={product.thumbnail}
               thumb_alt={product.title}

@@ -15,10 +15,10 @@ export default function CardProduct({
 
   return (
     <div
-      className={`card card-background align-items-start mb-4 mb-lg-0 ${classList}`}
+      className={`card card-background align-items-start mb-4 mb-lg-0 shadow flex flex-col bg-position-[50%]  ${classList}`}
     >
       <div
-        className="full-background"
+        className="full-background bg-position-[50%] bg-size-cover"
         style={{
           backgroundImage: `url(${thumb_src})`,
           backgroundSize: 'cover',
@@ -26,7 +26,7 @@ export default function CardProduct({
       ></div>
       <div className={`card-body ${classBody}`}>
         <div className="d-block mt-8">
-          <h4 className="text-white">{title}</h4>
+          <h4 className="text-black">{title}</h4>
           {cta && (
             <a href={cta} className="text-white mb-0">
               Shop now

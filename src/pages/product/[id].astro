@@ -54,7 +54,7 @@ const data = {
       <h5 class="mb-4">Customers also purchased</h5>
       {
         relatedProducts.slice(2,6).map((related) => (
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 flex flex-row">
             <CardProduct
               thumb_src={related.thumbnail}
               thumb_alt={related.title}

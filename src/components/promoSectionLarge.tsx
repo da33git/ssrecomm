@@ -35,7 +35,7 @@ export default function PromoSectionLarge({
                     {full_description}
                   </p>
                 )}
-                <a className="btn btn-white btn-lg" href="/shop">
+                <a className="btn btn-white btn-lg outline-2 outline-blue-500" href="/shop">
                   Show now
                 </a>
               </div>

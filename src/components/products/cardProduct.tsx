@@ -27,9 +27,9 @@ export default function CardProduct({
 
   return (
     <>
-      <div className="card card-product border border-white mb-5 shadow-xs">
+      <div className="card card-product   border-2 border-purple-700 mb-5 shadow-xs p-4 m-2">
         <a href={href}>
-          <div className="height-300">
+          <div className="h-300px">
             <img
               className="w-100 h-100 rounded-top"
               src={thumb_src}
@@ -38,12 +38,12 @@ export default function CardProduct({
           </div>
           <div className={classList}>
             {color && <p className="text-sm mb-1 text-body">{color}</p>}
-            {title && <h5 className="font-weight-bold">{title}</h5>}
+            {title && <h5 className="font-weight-bold font-semibold text-xl">{title}</h5>}
 
-            {description && <p className="text-body text-sm">{description}</p>}
+            {description && <p className="text-body text-sm p-2 opacity-50">{description}</p>}
 
             {price && (
-              <p className="mb-0 text-sm text-body mt-1 mb-3">
+              <p className=" text-sm text-body mt-1 mb-3">
                 ${price?.toFixed(2)}
               </p>
             )}
