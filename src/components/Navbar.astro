@@ -2,14 +2,14 @@
 ---
 
 <nav
-  class="navbar navbar-expand-lg blur border-radius-sm top-0 z-index-3 shadow position-sticky py-3 start-0 end-0"
+  class="navbar navbar-expand-lg  border-radius-sm top-0 z-index-3  position-sticky py-3 start-0 end-0 shadow bg-white sticky"
 >
-  <div class="container px-1">
-    <a class="navbar-brand font-weight-bolder ms-lg-0" href="/">
+  <div class=" px-1 flex flex-row justify-between">
+    <a class="navbar-brand font-weight-bolder ms-lg-0 font-semibold text-sm border-2 p-2" href="/">
       Astro Ecommerce
     </a>
     <button
-      class="navbar-toggler shadow-none ms-2"
+      class="navbar-toggler shadow-none ms-2 hidden"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navigation"
@@ -23,11 +23,11 @@
         <span class="navbar-toggler-bar bar3"></span>
       </span>
     </button>
-    <div class="collapse navbar-collapse" id="navigation">
-      <ul class="navbar-nav ms-auto">
+    <div class="collapse md:visible navbar-collapse md:flex" id="navigation">
+      <ul class="navbar-nav ms-auto flex items-center p-4">
         <li class="nav-item">
           <a
-            class="nav-link text-dark font-weight-bold d-flex align-items-center me-2"
+            class="nav-link text-dark font-weight-bold d-flex align-items-center me-2 text-black semi-bold text-sm flex!important"
             aria-current="page"
             href="/shop"
           >
@@ -36,7 +36,7 @@
         </li>
         <li class="nav-item">
           <a
-            class="nav-link text-dark font-weight-bold d-flex align-items-center me-2"
+            class="nav-link text-dark font-weight-bold d-flex align-items-center me-2 text-sm"
             aria-current="page"
             href="/about"
           >

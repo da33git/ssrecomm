@@ -31,9 +31,9 @@ export default function productOverviewGallery({
   return (
     <>
       <div className="card card-product card-plain">
-        <div className="row">
+        <div className="row flex flex-row">
           {images.length != 0 && <ProductImages images={images} />}
-          <div className="col-12 col-lg-6 mt-5 mt-lg-0">
+          <div className="col-12 col-lg-6 mt-5 mt-lg-0 w-full lg:flex-0">
             {title.length != 0 && <h2>{title}</h2>}
             {price && (
               <>
@@ -52,7 +52,7 @@ export default function productOverviewGallery({
               </>
             )}
 
-            <div className="d-flex align-items-center mt-4">
+            <div className="d-flex align-items-center mt-4 flex flex-row">
               <button className="btn btn-primary btn-lg mb-0 me-4">
                 Add to Bag
               </button>

@@ -14,7 +14,7 @@ export default function ProductAccordion({ data }: Props) {
         <div className="accordion-item">
           <h5 className="accordion-header" id={'heading' + i}>
             <button
-              className="accordion-button border-bottom font-weight-bold py-4"
+              className="accordion-button border-bottom font-weight-bold py-4 border-b-2 border-gray-200 collapsed flex"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target={'#collapse' + i}
@@ -23,11 +23,11 @@ export default function ProductAccordion({ data }: Props) {
             >
               {title}
               <i
-                className="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3"
+                className="collapse-close fa fa-plus  text-xs pt-1 position-absolute end-0 me-3 text-purple-700"
                 aria-hidden="true"
               ></i>
               <i
-                className="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3"
+                className="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3 text-purple-900"
                 aria-hidden="true"
               ></i>
             </button>
@@ -58,11 +58,11 @@ export default function ProductAccordion({ data }: Props) {
             >
               {title}
               <i
-                className="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3"
+                className="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3 text-yellow-700"
                 aria-hidden="true"
               ></i>
               <i
-                className="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3"
+                className="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3 text-yellow-400"
                 aria-hidden="true"
               ></i>
             </button>
