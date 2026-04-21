@@ -5,10 +5,13 @@
     "packageRules": [
     {
     "description": "Svelte ecosystem (high risk)",
-    "matchPackagePatterns": ["^svelte", "^@sveltejs/"],
     "groupName": "svelte ecosystem",
     "automerge": false,
-    "dependencyDashboardApproval": true
+    "dependencyDashboardApproval": true,
+    "matchPackageNames": [
+    "/^svelte/",
+    "/^@sveltejs//"
+    ]
     },
      {
      "description": "Astro ecosystem (high risk)",
@@ -19,39 +22,70 @@
        },
     {
     "description": "Vite ecosystem",
-    "matchPackagePatterns": ["^vite", "^@vitejs/"],
-    "groupName": "vite ecosystem"
+    "groupName": "vite ecosystem",
+    "matchPackageNames": [
+    "/^vite/",
+    "/^@vitejs//"
+    ]
     },
     {
     "description": "Linting tools",
-    "matchPackagePatterns": ["^eslint", "^prettier"],
     "groupName": "linting",
-    "automerge": false
+    "automerge": false,
+    "matchPackageNames": [
+    "/^eslint/",
+    "/^prettier/"
+    ]
     },
     {
     "description": "Testing tools",
-    "matchPackagePatterns": ["^vitest", "^jest", "^@testing-library"],
-    "groupName": "testing"
+    "groupName": "testing",
+    "matchPackageNames": [
+    "/^vitest/",
+    "/^jest/",
+    "/^@testing-library/"
+    ]
     },
     {
     "description": "Minor safe updates",
     "matchUpdateTypes": ["minor"],
     "matchCurrentVersion": "!/^0/",
-    "excludePackagePatterns": ["astro", "@astrojs/*", "^svelte", "^@sveltejs/", "^vite", "^@vitejs/"],
-    "automerge": false
+    "automerge": false,
+    "matchPackageNames": [
+    "!/astro/",
+    "!/@astrojs/*/",
+    "!/^svelte/",
+    "!/^@sveltejs//",
+    "!/^vite/",
+    "!/^@vitejs//"
+    ]
     },
     {
     "description": "Patch safe updates",
     "matchUpdateTypes": ["patch"],
     "matchCurrentVersion": "!/^0/",
-    "excludePackagePatterns": ["astro", "@astrojs/*", "^svelte", "^@sveltejs/", "^vite", "^@vitejs/"],
-    "automerge": true
+    "automerge": true,
+    "matchPackageNames": [
+    "!/astro/",
+    "!/@astrojs/*/",
+    "!/^svelte/",
+    "!/^@sveltejs//",
+    "!/^vite/",
+    "!/^@vitejs//"
+    ]
     },
         {
     "description": "Minor/patch safe updates",
     "matchUpdateTypes": ["minor", "patch"],
-    "excludePackagePatterns": ["astro", "@astrojs/*", "^svelte", "^@sveltejs/", "^vite", "^@vitejs/"],
-    "automerge": false
+    "automerge": false,
+          "matchPackageNames": [
+                "!/astro/",
+                "!/@astrojs/*/",
+                "!/^svelte/",
+                "!/^@sveltejs//",
+                "!/^vite/",
+                "!/^@vitejs//"
+            ]
     },
 
     {
