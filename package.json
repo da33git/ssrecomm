@@ -49,7 +49,7 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "sass": "^1.55.0"
+    "sass": "^1.104.0"
   },
   "repository": {
     "type": "git",
